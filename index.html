@@ -1,0 +1,43 @@
+<!doctype html>
+<!-- Rovásírás — Attila üzenete · © 2026 · AGPL-3.0-or-later · github.com/sicambria/rovas-tanulas -->
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+  <meta name="theme-color" content="#160f24">
+  <meta name="description" content="Rovásírás — oktatójáték, amely Attila korában tanítja meg a magyar ábécé mind a 40 rovásjelét. Magyar nyelven, 8 éves kortól.">
+  <title>Rovásírás — Attila üzenete</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skiplink" href="#app">Ugrás a játékhoz</a>
+  <div class="embers" id="embers" aria-hidden="true"></div>
+  <main id="app" aria-live="polite"></main>
+
+  <script src="js/glyphs.js"></script>
+  <script src="js/glyph-outlines.js"></script>
+  <script src="js/glyph-balanced.js"></script>
+  <script src="js/words.js"></script>
+  <script src="js/srs.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/strings/hu.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/glyph-templates-extra.js"></script>
+  <script src="js/recognizer.js"></script>
+  <script src="js/users.js"></script>
+  <script src="js/draw.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/music.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js').catch(function () { /* offline opcionális */ });
+      });
+    }
+  </script>
+</body>
+</html>

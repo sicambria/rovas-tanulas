@@ -1,0 +1,15 @@
+{
+  "name": "Rovásírás — Attila üzenete",
+  "short_name": "Rovásírás",
+  "description": "Oktatójáték: tanuld meg a magyar ábécé mind a 40 rovásjelét Attila korában.",
+  "lang": "hu",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#160f24",
+  "theme_color": "#160f24",
+  "icons": [
+    { "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
